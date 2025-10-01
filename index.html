@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Koh Golf</title>
+</head>
+<body>
+  <h1>Lucas Koh Golf Swing Recorder</h1>
+  <video id="video" width="100%" autoplay playsinline></video><br>
+
+  <button id="recordBtn">녹화 시작</button>
+  <input type="file" id="fileInput" accept="video/*"><br><br>
+
+  <label>FPS 선택: 
+    <select id="fpsSelect">
+      <option value="30">30fps</option>
+      <option value="240">240fps</option>
+    </select>
+  </label><br><br>
+
+  <button id="playbackNormal">정상 (1x)</button>
+  <button id="playbackSlow">1/8x</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
