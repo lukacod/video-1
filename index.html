@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Koh Golf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Lucas Koh Golf</h1>
+    <select id="fpsSelect">
+      <option value="normal">정상</option>
+      <option value="240">240fps</option>
+    </select>
+  </header>
+
+  <main>
+    <video id="videoPlayer" controls playsinline></video>
+
+    <div id="controls">
+      <button id="recordBtn" class="record">●</button>
+      <span id="timer">00:00</span>
+      <input type="file" id="fileInput" accept="video/*">
+    </div>
+
+    <div id="playbackControls">
+      <button id="normalSpeed">1x</button>
+      <button id="slowSpeed">1/8x</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
